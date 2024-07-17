@@ -1,0 +1,31 @@
+public class conta{
+    private double saldo;
+
+    public conta(double saldoInicial) {
+        this.saldo = saldoInicial;
+    }
+
+    public double getSaldo() {
+        return this.saldo; 
+    }
+
+    public void depositar(double valor) {
+        if(valor > 0) {
+            saldo += valor;
+            System.out.println ("seu depósito de: " + valor + "foi concluido");
+        }
+    }
+
+    public void sacar(double valor) {
+        if (valor > 0) {
+            saldo -= valor;
+            System.out.println(" seu saque de: " + valor + "foi concluido")
+        }
+    }
+    public void pix(double valor) {
+        if(valor > 0) {
+            saldo -= valor; 
+            System.out.println("seu pix de: " + valor + "foi concluido")  
+        }
+    }
+}
